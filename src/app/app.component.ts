@@ -7,4 +7,48 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'plpm';
+  currentCustomer:string = 'Maria';
+
+  hello: string = 'how are you?';
+
+  data: [
+    {
+     image: 'C:\Users\pc\codes\New react-project\plpm\src\assets\Icon.svg'
+     textOne  : 'About Us'
+     textTwo: 'hello how are you'
+     
+    },
+   
+
+    
+
+   
+  ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
