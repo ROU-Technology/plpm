@@ -1,0 +1,59 @@
+
+ ::ng-deep .next {
+    background-color: red;
+
+    display:flex;
+    flex-direction: row;
+  }
+
+   ::ng-deep .text {
+   color: #161722;
+  }
+
+  ::ng-deep .text2 {
+    color: #161722;
+   }
+
+   ::ng-deep .text3 {
+       color: #161722;
+      }
+
+  ::ng-deep .box {
+       background-color: #E5E5E5;
+     }
+
+  ::ng-deep .box {
+    display: flex;
+   }
+
+    ::ng-deep .box .column:nth-child(1) {
+    background: linear-gradient(to bottom, #56CCF2 90%, #27AE60 10%)
+   }
+
+  ::ng-deep .box .column:nth-child(2) {
+   background: linear-gradient(to bottom, rgba(67, 181, 244, 0.8) 90%, #27AE60 10%)
+  }
+
+  ::ng-deep .box .column:nth-child(3) {
+   background: linear-gradient(to bottom, #56CCF2 90%, #27AE60 10%)
+  }
+
+  ::ng-deep .column {
+   flex: 50%;
+   padding: 10px;
+   height: 300px;
+
+   margin: 20px;
+  }
+
+  ::ng-deep .box h3 {
+   font-size: 32px;
+  }
+
+  ::ng-deep .box p {
+   font-size: 16px;
+  }
+
+
+
+
