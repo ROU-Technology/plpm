@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChurchRelevantComponent implements OnInit {
 
-  
+
   public data: Array<any>  = [
     {
       text: 'ABOUT US',
