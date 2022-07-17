@@ -1,0 +1,33 @@
+#home-hero{
+    .hero-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hero-texts{
+        font-family: roboto Condensed;
+        padding-left: 110px;
+        padding-top: 128px;
+        color: #0D0D0D;
+        
+    }
+    .welcome{
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    }
+    .comm-texts{
+        font-weight: 700;
+        font-size: 4rem;
+        text-transform: uppercase;
+        
+    }
+    .last-text{
+        display: flex;
+    }
+    .border-line{
+        border: 2px solid #2F80ED;
+        transform: rotate(90deg);
+        
+    }
+}
