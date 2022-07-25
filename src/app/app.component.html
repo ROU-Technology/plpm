@@ -1,28 +1,42 @@
-<h1 class="text-3xl font-bold underline text-plpmBlueFirst bg-plpmDark">
-  Hello world!
-</h1>
 
 
-<plpm-box *ngFor="let item of data">
+
+<plpm-nav-bar></plpm-nav-bar>
+
+
+
+
+
+
+
+
+<body>
+
+
+  <div class="box">
+    <plpm-box *ngFor="let item of data" class="column">
   
-  <h2>{{item.textOne}}</h2>
-  <p>{{item.textTwo}}</p>
-</plpm-box>
-
-
-<plpm-box>
+      <img src= {{item.imageUrl}}>
+      <h2>{{item.textOne}}</h2>
+      <p>{{item.textTwo}}</p>
   
- <p>papito</p>
-</plpm-box>
+    </plpm-box>
+  
+  </div>
 
-<div *ngFor="let d of data">
-  <p>{{d.textOne}}</p>
-
-</div>
-<h3>Current customer: {{currentCustomer}}</h3>
+</body>
 
 
 
-<h3>{{hello}}</h3>
 
-<h3>{{data.image}}</h3>
+                         
+
+
+
+
+
+
+
+
+
+
