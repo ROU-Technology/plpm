@@ -1,0 +1,106 @@
+<div class="box">
+  <div class="column" *ngFor="let d of data">
+    <div class="image-banner">
+      <app-box>
+        <div class="column1">
+          <h3 id="bannertitle" [className]="d.classNames">{{ d.text }}</h3>
+          <div id="bannertext" [innerHTML]="d.body">
+            <p [className]="d.classNames">{{ d.body }}</p>
+          </div>
+        </div>
+      </app-box>
+    </div>
+  </div>
+</div>
+
+<div class="box">
+  <div class="next">
+    <div class="card-body">
+      <form novalidate>
+        <fieldset>
+          <legend>CONTACT FORM:</legend>
+
+          <div class="form-group row">
+            <div class="col-md-8">
+              <input
+                class="form-control"
+                id="productNameId"
+                type="text"
+                placeholder="Your full Name"
+                required
+                minlength="3"
+                name="productName"
+              />
+              <span class="invalid-feedback"> </span>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-8">
+              <input
+                class="form-control"
+                id="productCodeId"
+                type="text"
+                placeholder="Your Email"
+                required
+                name="productCode"
+              />
+              <span class="invalid-feedback"> </span>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-8">
+              <input
+                class=""
+                id="productCodeId"
+                type="text"
+                placeholder="Query Related"
+                required
+                name="productCode"
+              />
+              <span class="invalid-feedback"> </span>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-md-8">
+              <textarea
+                class="form-control"
+                id="descriptionId"
+                placeholder="Message"
+                rows="3"
+                name="description"
+              ></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-md-1">
+        <button class="primary-btn btn" type="button">SEND MESSAGE</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="next" *ngFor="let d of contacts">
+    <app-box>
+      <p [className]="d.classNames">{{ d.title }}</p>
+      <div id="text" [innerText]="d.text">
+        <p [className]="d.classNames">{{ d.text }}</p>
+      </div>
+      <p id="text1" [className]="d.classNames">{{ d.text1 }}</p>
+      <div id="text2" [innerText]="d.text2">
+        <p [className]="d.classNames">{{ d.text2 }}</p>
+      </div>
+      <p id="text3" [className]="d.classNames">{{ d.text3 }}</p>
+      <div id="icons">
+        <a href=""><img [src]="d.icon" alt="" /></a>
+        <a href=""><img [src]="d.icon1" alt="" /></a>
+        <a href=""><img [src]="d.icon2" alt="" /></a>
+      </div>
+    </app-box>
+  </div>
+</div>
