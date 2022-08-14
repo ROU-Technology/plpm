@@ -2,14 +2,26 @@
 
 nav {
     height:50px;
-    width: 90%;
+   width: 96%;
     margin: 0 auto;
     
 }
 
-ul li:hover {
-    
-    color: slategray;
-    
-
+body {
+    height: 60px;
 }
+
+
+// @media screen and (max-width: 992px) {
+//     .first {
+//         width: 100%;
+//         margin: 0px;
+       
+//     }
+// }
+
+
+
+
+ 
+

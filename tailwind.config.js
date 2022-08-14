@@ -15,7 +15,7 @@ module.exports = {
       tiny: "5px;",
       thin: "7px;",
       large: "12px;",
-      larger: "20px;"
+      larger: "17px;"
       
 
     }
