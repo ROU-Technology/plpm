@@ -122,10 +122,10 @@
 
         margin-top: 30px;
         /* background: #161722; */
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 12px;
-        .subscribe-input {
-          border: 1px solid #6a6d6e;
+        // border: 1px solid rgba(255, 255, 255, 0.15);
+        // border-radius: 12px;
+        .subscribe-input { 
+          border: 1px solid rgba(255, 255, 255, 0.15);
           border-radius: 12px 0px 0px 12px;
           padding: 14px 10px;
           outline: none;
@@ -360,6 +360,7 @@
 
       .subscribe {
         h2 {
+          max-width: none;
         }
       }
     }
@@ -391,8 +392,23 @@
 
     .subscribe {
       h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
         text-align: center;
+      }
+
+      .subscribe-form-container{
+
+        .subscribe-form{
+          justify-content: center;
+
+          .subscribe-input{
+            width: unset;
+          }
+          .subscribe-btn{
+            padding: 0.65rem 1.25rem;
+            font-size: 0.75rem;
+          }
+        }
       }
     }
   }

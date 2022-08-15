@@ -7,6 +7,7 @@ import { HomeHeroComponent } from './components/home/home-hero/home-hero.compone
 import { BoxComponent } from './shared/components/box/box.component';
 import { ChurchRelevantComponent } from './components/church-relevant/church-relevant.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoveCompassionComponent } from './components/home/love-compassion/love-compassion.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeHeroComponent,
     BoxComponent,
     ChurchRelevantComponent,
-    FooterComponent
+    FooterComponent,
+    LoveCompassionComponent
   ],
   imports: [
     BrowserModule

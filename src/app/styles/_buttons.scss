@@ -9,6 +9,10 @@
   box-shadow: none;
   border-radius: 0.75rem;
   text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+ 
 }
 
 .primary-btn {
