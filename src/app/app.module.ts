@@ -8,6 +8,7 @@ import { BoxComponent } from './shared/components/box/box.component';
 import { ChurchRelevantComponent } from './components/church-relevant/church-relevant.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoveCompassionComponent } from './components/home/love-compassion/love-compassion.component';
+import { OurSermonsComponent } from './components/home/our-sermons/our-sermons.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LoveCompassionComponent } from './components/home/love-compassion/love-
     BoxComponent,
     ChurchRelevantComponent,
     FooterComponent,
-    LoveCompassionComponent
+    LoveCompassionComponent,
+    OurSermonsComponent
   ],
   imports: [
     BrowserModule
