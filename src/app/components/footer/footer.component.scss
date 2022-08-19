@@ -8,13 +8,14 @@
     display: flex;
     font-family: "roboto Condensed";
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .texts {
     display: flex;
     flex-direction: column;
     padding-left: 45px;
-    margin-right: 240px;
+    // margin-right: 240px;
 
     .liberty-text {
       padding-left: 45px;
@@ -53,7 +54,7 @@
   .quicklinks-connect {
     display: flex;
     gap: 4.5rem;
-    margin-right: 150px;
+    // margin-right: 150px;
   }
 
   .quick-links {
@@ -97,6 +98,7 @@
   }
 
   .subscribe {
+    padding-right: 6.875rem;
     h2 {
       font-weight: 700;
       font-size: 32px;
@@ -359,6 +361,7 @@
       }
 
       .subscribe {
+        padding-right: 0rem;
         h2 {
           max-width: none;
         }
@@ -391,6 +394,7 @@
     }
 
     .subscribe {
+      padding-right: 0rem;
       h2 {
         font-size: 1.25rem;
         text-align: center;
