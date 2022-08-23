@@ -6,6 +6,7 @@ import { AboutModule } from './about/about.module';
 import { AppComponent } from './app.component';
 import { BoxComponent } from './component/box/box.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
+import { EventModule } from './event/event.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavBarComponent } from './component/nav-bar/nav-bar.component';
   imports: [
     
     BrowserModule,
-    AboutModule
+    AboutModule,
+    EventModule
 
   ],
   providers: [],
