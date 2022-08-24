@@ -1,0 +1,17 @@
+<!-- SUB-HEADLINE -->
+  <h6 class="text-lg font-normal text-center">
+    SUB-HEADLINE</h6>
+   <!--Heading-->
+   <h2 class="text-4xl font-bold text-center">
+    CHURCH THAT'S RELEVANT
+   </h2>
+
+<div class="box">
+  <div class="column" *ngFor="let d of data">
+    <app-box>
+      <img [src]="d.icon" alt="">
+      <h3 [className]="d.classNames">{{ d.text }}</h3>
+      <p [className]="d.classNames">{{ d.body }}</p>
+    </app-box>
+</div>
+</div>

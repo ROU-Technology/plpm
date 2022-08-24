@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ContactUsModule } from './contact-us/contact-us.module';
+import { SharedModule } from './shared/shared.module';
 import { AboutModule } from './about/about.module';
 
 import { AppComponent } from './app.component';
@@ -17,11 +19,13 @@ import { EventModule } from './event/event.module';
   imports: [
     
     BrowserModule,
+    SharedModule,
     AboutModule,
-    EventModule
+    EventModule,
+    ContactUsModule
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
