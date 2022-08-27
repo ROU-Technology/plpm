@@ -1,3 +1,4 @@
+import { EventDetailsModule } from './event-details/event-details.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,6 +10,8 @@ import { AppComponent } from './app.component';
 import { BoxComponent } from './component/box/box.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { EventModule } from './event/event.module';
+import { EventThumbnailComponent } from './shared/event-thumbnail.component';
+import { EventDetailsService } from './shared/event-details.service';
 
 @NgModule({
   declarations: [
@@ -17,15 +20,16 @@ import { EventModule } from './event/event.module';
     NavBarComponent
   ],
   imports: [
-    
+
     BrowserModule,
     SharedModule,
     AboutModule,
     EventModule,
-    ContactUsModule
-
+    ContactUsModule,
+    EventDetailsModule
   ],
-  providers: [],
+  providers: [EventDetailsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
