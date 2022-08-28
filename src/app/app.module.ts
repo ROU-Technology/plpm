@@ -1,3 +1,5 @@
+import { SermonService } from './shared/sermon.service';
+import { SermonModule } from './sermon/sermon.module';
 import { EventDetailsModule } from './event-details/event-details.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -10,7 +12,6 @@ import { AppComponent } from './app.component';
 import { BoxComponent } from './component/box/box.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { EventModule } from './event/event.module';
-import { EventThumbnailComponent } from './shared/event-thumbnail.component';
 import { EventDetailsService } from './shared/event-details.service';
 
 @NgModule({
@@ -26,9 +27,10 @@ import { EventDetailsService } from './shared/event-details.service';
     AboutModule,
     EventModule,
     ContactUsModule,
-    EventDetailsModule
+    EventDetailsModule,
+    SermonModule
   ],
-  providers: [EventDetailsService],
+  providers: [EventDetailsService, SermonService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

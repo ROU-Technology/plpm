@@ -1,8 +1,34 @@
-<div class="p-8 bg-amber-300">
+<div class="p-8 bg-plpmLightGray">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8">
 
-    <div class="p-4 bg-cyan-400 rounded-md flex items-center justify-center"><img src="./assets/images/img_event_details.svg" alt=""></div>
-<div id="form" class="px-6 py-4">
+    <div class="bg-plpmLightGray">
+      <img src="./assets/images/img_event_details.svg" alt="">
+      <div class="p-6">
+          <div *ngFor="let d of contacts">
+            <app-box>
+              <p id="upcoming_events" [className]="d.classNames">{{ d.title }}</p>
+              <div id="text" [innerText]="d.text">
+                <p [className]="d.classNames">{{ d.text }}</p>
+              </div>
+
+              <div id="text1" [innerText]="d.text1">
+                <p id="text1" [className]="d.classNames">{{ d.text1 }}</p>
+              </div>
+
+              <div id="text2" [innerText]="d.text2">
+                <p [className]="d.classNames">{{ d.text2 }}</p>
+              </div>
+
+              <div id="text3" [innerText]="d.text3">
+                <p id="text3" [className]="d.classNames">{{ d.text3 }}</p>
+              </div>
+            </app-box>
+        </div>
+      </div>
+    </div>
+
+
+<div id="form" class="px-6 py-4 bg-plpmDarkGray">
         <form novalidate>
           <fieldset>
             <legend>REGISTER NOW</legend>
@@ -22,9 +48,9 @@
                   </div>
               </div>
 
-            <div class="form-group row" style="background-color: #F7F8FA;">
+            <div class="form-group row">
               <label class="col-md-2 col-form-label"
-              for="firstNameId" style="background-color: #F7F8FA;">Full Name</label>
+              for="firstNameId">Full Name</label>
               <div class="col-md-8">
                 <input
                   class="form-control"
@@ -39,9 +65,9 @@
               </div>
             </div>
 
-            <div class="form-group row" style="background-color: #F7F8FA;">
+            <div class="form-group row">
               <label class="col-md-2 col-form-label"
-              for="firstNameId" style="background-color: #F7F8FA;">Email</label>
+              for="firstNameId">Email</label>
               <div class="col-md-8">
                 <input
                   class="form-control"
@@ -58,14 +84,14 @@
           </fieldset>
 
           <div class="form-group row">
-            <div class="col-md-1" style="background-color: #F7F8FA;">
+            <div class="col-md-1">
               <button class="primary-btn btn" type="button">REGISTER NOW</button>
           </div>
           </div>
         </form>
     </div>
 
-<div class="px-6 py-4">
+<!-- <div class="px-6 py-4">
       <div *ngFor="let d of contacts">
         <app-box>
           <p id="upcoming_events" [className]="d.classNames">{{ d.title }}</p>
@@ -79,7 +105,7 @@
           <p id="text3" [className]="d.classNames">{{ d.text3 }}</p>
         </app-box>
     </div>
-  </div>
+  </div> -->
 </div>
 </div>
 
@@ -87,13 +113,10 @@
 <h1 id="event-upcoming">Upcoming Events</h1>
 </div>
 
-<div class="px-10 py-20">
+<div class="px-10 py-20 bg-plpmLightGray">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-10">
       <div  class="column" *ngFor="let event of events">
         <event-thumbnail [event]="event"></event-thumbnail>
       </div>
 </div>
 </div>
-
-
-

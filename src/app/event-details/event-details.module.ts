@@ -12,12 +12,3 @@ import { EventThumbnailComponent } from '../shared/event-thumbnail.component';
   exports: [EventDetailsComponent],
 })
 export class EventDetailsModule { }
-
-
-
-// @NgModule({
-//   declarations: [ContactUsComponent],
-//   imports: [CommonModule, SharedModule],
-//   exports: [ContactUsComponent],
-// })
-// export class ContactUsModule {}

@@ -5,43 +5,7 @@ export class EventDetailsService  {
   getEvents() {
     return EVENTS
   }
-
-  // getEvents_MAIN() {
-  //   return EVENTS_MAIN
-  // }
 }
-
-// const EVENTS_MAIN = [
-//     {
-//       id: 1,
-//       imageUrl: '/assets/images/angularconnect-shield.png',
-//       type:'Upcoming Event',
-//       name: 'PRETORIA WE ARE HERE',
-//       body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-//       time: 'Friday 23:39 IST Saturday 11:20 ISD',
-//       // price: 599.99,
-//       location: {
-//         address: 'No 233 Main St. ',
-//         city: 'New York',
-//         country: 'United States'
-//       },
-//     },
-//      {
-//        id: 2,
-//        date: '9/26/2036',
-//        type:'Upcoming Event',
-//        name: 'DR. MOTSEKI IS COMPUTER SYSTEMS ENGINEER',
-//        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-//        time: 'Friday 23:39 IST Saturday 11:20 ISD',
-//        // price: 599.99,
-//        imageUrl: '/assets/images/angularconnect-shield.png',
-//        location: {
-//          address: 'No 233 Main St. ',
-//          city: 'New York',
-//          country: 'United States'
-//        },
-//      },
-//   ]
 
 const EVENTS = [
   {

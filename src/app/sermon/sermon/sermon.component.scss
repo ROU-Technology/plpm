@@ -23,7 +23,10 @@ img {
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: 0px;
+  // margin-top: -15px;
+
+  background-position: center center;
+  // background-size: cover;
 }
 
 .fa-search {
@@ -59,7 +62,7 @@ img {
   }
 
    ::ng-deep .column:nth-child(1) {
-   background: linear-gradient(to bottom, #FFFFFF 90%, #FFD0A0 10%)
+   background: linear-gradient(to bottom, #FFFFFF 90%, #27AE60 10%)
   }
 
  ::ng-deep .column:nth-child(2) {
@@ -73,6 +76,20 @@ img {
  ::ng-deep .column:nth-child(4) {
   background: linear-gradient(to bottom, #FFFFFF 90%, #FFFFFF 10%)
  }
+ 
+ ::ng-deep .column:nth-child(5) {
+  background: linear-gradient(to bottom, #FFFFFF 90%, #FFFFFF 10%)
+ }
+
+ ::ng-deep .column:nth-child(6) {
+  background: linear-gradient(to bottom, #FFFFFF 90%, #FFFFFF 10%)
+ }
+ 
+ ::ng-deep .column:nth-child(7) {
+  background: linear-gradient(to bottom, #FFFFFF 90%, #FFFFFF 10%)
+ }
+
+
 
  ::ng-deep .box h3 {
   font-size: 32px;

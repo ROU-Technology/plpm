@@ -17,6 +17,7 @@ module.exports = {
         plpmBlueSecond: "#56CCF2",
         plpmGray: "#828282",
         plpmLightGray: "#E5E5E5",
+        plpmDarkGray: "#F7F8FA",
         plpmCard: "#56CCF2",
         FillColor: "#FFA500",
       },
@@ -25,10 +26,10 @@ module.exports = {
         thin: "7px;",
         large: "12px;",
         larger: "17px;",
-        
-        
-        
-  
+
+
+
+
       },
       width: {
         cardwidth: "24%;"
@@ -37,10 +38,10 @@ module.exports = {
       height: {
         long: "900px;"
       }
-    
+
     },
-  
-    
+
+
   },
   plugins: [],
 };
