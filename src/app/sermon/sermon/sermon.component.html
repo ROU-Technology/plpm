@@ -8,8 +8,6 @@
 
     <div id="form" class="px-6 py-4 bg-plpmDarkGray">
       <div *ngFor="let d of contacts">
-        <app-box>
-
           <div class="flex-container">
 
             <div class="fa-ul">
@@ -35,7 +33,6 @@
                <p id="text1" [className]="d.classNames">{{ d.text1 }}</p>
             </div>
         </div>
-        </app-box>
     </div><br><br><br><br>
       <button class="primary-btn btn" type="button">Read more</button>
     </div>
@@ -54,5 +51,3 @@
         </div>
   </div>
 </div>
-
-
