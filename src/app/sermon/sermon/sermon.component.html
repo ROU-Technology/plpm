@@ -1,53 +1,56 @@
 <div class="p-8 bg-plpmLightGray">
   <div class="bg-plpmDarkGray">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-8">
+      <div
+        class="p-4 bg-plpmDarkGray rounded-md flex items-center justify-center"
+      >
+        <img src="./assets/images/img_sermon.svg" alt="" />
+      </div>
 
-    <div class="p-4 bg-plpmDarkGray rounded-md flex items-center justify-center">
-      <img src="./assets/images/img_sermon.svg" alt="">
-    </div>
-
-    <div id="form" class="px-6 py-4 bg-plpmDarkGray">
-      <div *ngFor="let d of contacts">
+      <div id="form" class="px-6 py-4 bg-plpmDarkGray">
+        <div *ngFor="let d of contacts">
           <div class="flex-container">
-
             <div class="fa-ul">
               <li>
-                <span>{{d.time?.day}}</span>
+                <span>{{ d.time?.day }}</span>
               </li>
             </div>
 
             <div class="fa-ul">
               <li>
-                <span class="pad-left">{{d.time?.author}}</span>
+                <span class="pad-left">{{ d.time?.author }}</span>
               </li>
             </div>
-        </div>
-        <div>
-          <p id="upcoming_events" [className]="d.classNames">{{ d.title }}</p>
-        </div>
-          <div id="text" [innerText]="d.text">
-            <p [className]="d.classNames">{{ d.text }}</p>
           </div>
           <div>
-            <div id="text1" [innerText]="d.text1">
-               <p id="text1" [className]="d.classNames">{{ d.text1 }}</p>
-            </div>
+            <p id="upcoming_events">{{ d.title }}</p>
+          </div>
+          <div id="text">
+            <p>{{ d.text }}</p>
+          </div>
+          <div class="my-3 max-h-[150px] overflow-clip">
+            <p id="text1">{{ d.text1 }}</p>
+          </div>
         </div>
-    </div><br><br><br><br>
-      <button class="primary-btn btn" type="button">Read more</button>
+        <button
+          class="primary-btn font-normal text-[15px] px-3 py-2"
+          type="button"
+        >
+          Read more
+        </button>
+      </div>
     </div>
   </div>
 </div>
-</div>
 
 <div class="box">
-<h1 id="event-upcoming">ALL SERMONS</h1>
+  <h1 id="event-upcoming">ALL SERMONS</h1>
 </div>
 
 <div class="px-10 py-20 bg-plpmLightGray">
   <div class="grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-10">
-        <div  class="column" *ngFor="let event of events">
-          <sermon-thumbnail [event]="event"></sermon-thumbnail>
-        </div>
+    <div class="column" *ngFor="let event of events">
+      <sermon-thumbnail [event]="event"></sermon-thumbnail>
+    </div>
   </div>
 </div>

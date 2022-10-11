@@ -1,19 +1,28 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { CommonModule } from '@angular/common';
-// import { HomeComponent } from './home/home.component';
+import * as R from './shared/constants/routes';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: '/home' },
   {
-    path: '',
-    loadChildren: () =>
-      import('src/app/components/home/home.module').then((m) => m.HomeModule),
+    path: R.home,
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
   },
 
   {
-    path: 'contact-us',
+    path: R.contact,
     loadChildren: () =>
       import('./contact-us/contact-us.module').then((m) => m.ContactUsModule),
+  },
+  {
+    path: R.sermon,
+    loadChildren: () =>
+      import('./sermon/sermon.module').then((m) => m.SermonModule),
+  },
+  {
+    path: R.event,
+    loadChildren: () =>
+      import('./event/event.module').then((m) => m.EventModule),
   },
 ];
 

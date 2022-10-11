@@ -23,7 +23,7 @@
     }
     h3 {
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       line-height: 1.75rem;
       //   text-align: center;
       text-transform: uppercase;
@@ -101,7 +101,7 @@
     padding-right: 6.875rem;
     h2 {
       font-weight: 700;
-      font-size: 32px;
+      font-size: 25px;
       line-height: 44px;
       letter-spacing: -0.01em;
       text-transform: uppercase;
@@ -126,7 +126,7 @@
         /* background: #161722; */
         // border: 1px solid rgba(255, 255, 255, 0.15);
         // border-radius: 12px;
-        .subscribe-input { 
+        .subscribe-input {
           border: 1px solid rgba(255, 255, 255, 0.15);
           border-radius: 12px 0px 0px 12px;
           padding: 14px 10px;
@@ -135,8 +135,6 @@
           color: #ffffff;
           // height: 64px;
           background: #161722;
-
-         
         }
         .subscribe-btn {
           // outline: none;
@@ -154,12 +152,12 @@
           margin-left: -10px;
           color: #1c1d28;
           background: #2f80ed;
-          padding: 1.5rem 4rem;
-         
+          padding: 1rem 2.5rem;
+
           border: 0.0625rem solid #2f80ed;
-          
+
           font-size: 1rem;
-         
+
           box-shadow: none;
           border-radius: 0.75rem;
           text-transform: uppercase;
@@ -400,15 +398,14 @@
         text-align: center;
       }
 
-      .subscribe-form-container{
-
-        .subscribe-form{
+      .subscribe-form-container {
+        .subscribe-form {
           justify-content: center;
 
-          .subscribe-input{
+          .subscribe-input {
             width: unset;
           }
-          .subscribe-btn{
+          .subscribe-btn {
             padding: 0.65rem 1.25rem;
             font-size: 0.75rem;
           }
