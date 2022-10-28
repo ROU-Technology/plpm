@@ -4,19 +4,19 @@
       <div
         class="p-4 bg-plpmDarkGray rounded-md flex items-center justify-center"
       >
-        <img src="./assets/images/img_sermon.svg" alt="" />
+        <img class="" src="./assets/images/img_sermon.svg" alt="" />
       </div>
 
       <div id="form" class="px-6 py-4 bg-plpmDarkGray">
         <div *ngFor="let d of contacts">
-          <div class="flex-container">
-            <div class="fa-ul">
+          <div class="flex-container lg:gap-[14px]">
+            <div class="fa-ul ml-5 md:ml-8">
               <li>
                 <span>{{ d.time?.day }}</span>
               </li>
             </div>
 
-            <div class="fa-ul">
+            <div class="fa-ul ml-5 md:ml-8">
               <li>
                 <span class="pad-left">{{ d.time?.author }}</span>
               </li>
@@ -47,8 +47,10 @@
   <h1 id="event-upcoming">ALL SERMONS</h1>
 </div>
 
-<div class="px-10 py-20 bg-plpmLightGray">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-10">
+<div class="px-14 md:px-16 py-20 bg-plpmLightGray">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10"
+  >
     <div class="column" *ngFor="let event of events">
       <sermon-thumbnail [event]="event"></sermon-thumbnail>
     </div>

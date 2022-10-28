@@ -7,9 +7,14 @@ import * as R from '../../constants/routes';
   styleUrls: ['./nav-bar.component.scss'],
 })
 export class NavBarComponent implements OnInit {
+  hidenavbar: boolean = false;
   Routes = R;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  togglenavbarmobile(): void {
+    this.hidenavbar =!this.hidenavbar;
+  }
 }
