@@ -1,0 +1,108 @@
+#love-compassion {
+  margin-bottom: 8rem;
+  .love-compassion-text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    font-family: "Roboto Condensed";
+
+    h2 {
+      font-weight: 700;
+      font-size: 3rem;
+      line-height: 4rem;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #161722;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #161722;
+      opacity: 0.78;
+      max-width: 846px;
+    }
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .button-img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // gap: 3rem;
+    }
+    img {
+      margin-top: 3rem;
+      max-height: 384px;
+    }
+  }
+
+  .love-compassion-text2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    font-family: "Roboto Condensed";
+    color: #161722;
+    gap: 1rem;
+
+    p {
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      max-width: 512px;
+      text-align: center;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2.75rem;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #161722;
+    }
+  }
+
+    .buttondiv-smalldivce{
+      display: none;
+      justify-content: center;
+      margin:3rem 0 5rem 0;
+      height: 11px;
+    }
+  }
+
+@media screen and (max-width: 991.98px) {
+  #love-compassion {
+    .love-compassion-text1 {
+      h2{
+        margin-bottom: 1rem;
+      }
+    }
+    .button-img {
+      .read-morelargedevicce{
+        display: none;
+      }
+    }
+    .buttondiv-smalldivce{
+      display: flex;
+    }
+    
+  }
+}
+

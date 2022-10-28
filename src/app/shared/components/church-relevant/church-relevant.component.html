@@ -1,0 +1,17 @@
+<!-- SUB-HEADLINE -->
+  <h6 class="text-lg font-normal text-center py-4">
+    SUB-HEADLINE</h6>
+   <!--Heading-->
+   <h2 class="pb-10">
+    CHURCH THAT'S RELEVANT
+   </h2>
+
+<div class="box flex justify-center flex-wrap pb-14">
+  <div class="column w-[78%] md:w-[42%] mx-auto lg:w-[340px] lg:mx-3 lg:mb-0 mb-10 px-16 pb-14 lg:pb-20 pt-8 lg:pt-14 " *ngFor="let d of data">
+    
+      <img  [src]="d.icon" alt="">
+      <h4 class="mt-5">{{ d.text }}</h4>
+      <p class="w-[220px] mt-5">{{ d.body }}</p>
+    
+</div>
+</div>

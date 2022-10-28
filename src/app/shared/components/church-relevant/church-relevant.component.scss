@@ -1,0 +1,42 @@
+h2 {
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+}
+h2,
+h4 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+h6 {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+h4 {
+  font-size: 32px;
+  line-height: 44px;
+}
+h2,
+h6,
+h4 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+
+  text-transform: uppercase;
+  color: #161722;
+}
+.box {
+  font-family: "Roboto Condensed";
+  color: #161722;
+}
+
+.box .column:nth-child(1) {
+  background: linear-gradient(to bottom, #56ccf2 90%, #27ae60 10%);
+}
+.box .column:nth-child(2) {
+  background: linear-gradient(to bottom, #43b5f4cc 90%, #27ae60 10%);
+}
+.box .column:nth-child(3) {
+  background: linear-gradient(to bottom, #56ccf2 90%, #27ae60 10%);
+}
