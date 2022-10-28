@@ -78,4 +78,31 @@
       color: #161722;
     }
   }
+
+    .buttondiv-smalldivce{
+      display: none;
+      justify-content: center;
+      margin:3rem 0 5rem 0;
+      height: 11px;
+    }
+  }
+
+@media screen and (max-width: 991.98px) {
+  #love-compassion {
+    .love-compassion-text1 {
+      h2{
+        margin-bottom: 1rem;
+      }
+    }
+    .button-img {
+      .read-morelargedevicce{
+        display: none;
+      }
+    }
+    .buttondiv-smalldivce{
+      display: flex;
+    }
+    
+  }
 }
+

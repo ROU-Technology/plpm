@@ -60,6 +60,8 @@ img {
   padding: 10px;
   height: 350px;
   margin: 20px;
+  box-shadow: 0 0 5px #888;
+  border-radius:5px;
 }
 
 ::ng-deep .column:nth-child(1) {
@@ -237,4 +239,10 @@ input {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+@media screen and (max-width: 991.98px) {
+  ::ng-deep .flex-container {
+    flex-direction: column;
+    gap: 2px;
+  }
 }
