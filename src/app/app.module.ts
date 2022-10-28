@@ -6,7 +6,6 @@ import { SharedModule } from './shared/shared.module';
 import { AboutModule } from './about/about.module';
 import { SermonService } from './shared/sermon.service';
 import { SermonModule } from './sermon/sermon.module';
-import { EventDetailsModule } from './event-details/event-details.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EventModule } from './event/event.module';
@@ -22,7 +21,6 @@ import { HomeModule } from './home/home.module';
     AboutModule,
     EventModule,
     ContactUsModule,
-    EventDetailsModule,
     SermonModule,
     HomeModule,
   ],
