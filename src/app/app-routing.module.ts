@@ -24,6 +24,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./event/event.module').then((m) => m.EventModule),
   },
+  // {
+  //   path: R.blog,
+  //   loadChildren: () =>
+  //     import('./').then((m) => m.EventModule),
+  // },
 ];
 
 @NgModule({
