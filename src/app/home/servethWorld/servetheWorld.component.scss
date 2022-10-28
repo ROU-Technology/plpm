@@ -1,0 +1,30 @@
+.hero-div {
+  background-image: url("/assets/images/facade-agenda.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay-gradient {
+  background: linear-gradient(109.61deg, #cd5423 -53.83%, #ffd0a0 62.61%);
+  opacity: 0.27;
+  position: absolute;
+}
+.dialogg-box {
+  background: linear-gradient(to bottom, #ffffff 97%, #27ae60 3%);
+  z-index: 1;
+  .dialogg-box-content {
+    font-family: "Roboto Condensed";
+    color: #161722;
+    h2 {
+      text-transform: uppercase;
+      font-family: "Roboto Condensed";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      max-width: 300px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+  }
+}

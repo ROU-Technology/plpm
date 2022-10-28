@@ -1,0 +1,87 @@
+.previews {
+  font-family: "Roboto Condensed";
+  color: #161722;
+  flex-direction: column;
+  .preview-heading {
+    label {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18.75px;
+      text-align: center;
+      opacity: 0.78;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+  .hero-preview {
+    .firt-hero-preview,
+    .second-hero-preview,
+    .third-hero-preview,
+    .fourth-hero-preview {
+      display: flex;
+      align-items: flex-end;
+      background-position: center;
+      background-size: cover;
+      height: 384px;
+      width: 260px;
+      margin: 0 12px;
+      border-radius: 4px;
+    }
+    .hero-placeholder {
+      font-family: "Roboto Condensed";
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+      color: #fff;
+      padding-bottom: 25px;
+      h5 {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      p {
+        opacity: 0.78;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        font-style: normal;
+      }
+    }
+
+    .firt-hero-preview {
+      background-image: url("/assets/images/preview-hero-image-1.png");
+    }
+
+    .second-hero-preview {
+      background-image: url("/assets/images/preview-hero-image-2.png");
+    }
+
+    .third-hero-preview {
+      background-image: url("/assets/images/preview-hero-image-3.png");
+    }
+    .fourth-hero-preview {
+      background-image: url("/assets/images/preview-hero-image-4.png");
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .previews {
+    .hero-preview {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .firt-hero-preview,
+      .second-hero-preview,
+      .third-hero-preview,
+      .fourth-hero-preview {
+        margin-bottom:30px;
+      }
+    }
+  }
+}
