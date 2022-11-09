@@ -6,7 +6,7 @@
 }
 .overlay-gradient {
   background: linear-gradient(109.61deg, #cd5423 -53.83%, #ffd0a0 62.61%);
-  opacity: 0.27;
+  opacity: 0.3;
   position: absolute;
 }
 .dialogg-box {
@@ -26,5 +26,17 @@
       letter-spacing: -0.01em;
       text-transform: uppercase;
     }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      font-style: normal;
+      width: 230px;
+      opacity:0.78;
+    }
+   button{
+    text-transform: uppercase;
+   } 
   }
 }
+// https://www.youtube.com/channel/UC-qbPuKf5ioGpWn6i4YSPNg

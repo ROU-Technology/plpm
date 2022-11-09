@@ -9,6 +9,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { sermonsPreview } from './our-sermons-preview/sermonsPreviews.component';
 import { upcomingEventPreview } from './upcoming-events-previews/upcomingEventPreview.component';
 import { servetheWorld } from './servethWorld/servetheWorld.component';
+import { share_inspire_inovate } from './share-inspire-inovate/share-inspire-inovate.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { servetheWorld } from './servethWorld/servetheWorld.component';
     sermonsPreview,
     upcomingEventPreview,
     servetheWorld,
+    share_inspire_inovate,
     OurSermonsComponent,
   ],
   imports: [CommonModule, SharedModule, HomeRoutingModule],
