@@ -1,0 +1,21 @@
+<div class="flex flex-col items-center w-full mt-24 containner">
+  <div class="flex flex-col items-center gap-4 sub-head">
+    <label>Read our blog</label>
+    <h2 class="ml-6 lg:ml-0">share, inspire, innovate</h2>
+  </div>
+  <div class="flex flex-wrap justify-center boxx py-14">
+    <div
+      class="columnn w-[78%] md:w-[42%] mx-auto md:mx-2 lg:w-[265px] lg:mx-3 lg:mb-0 mb-10 pr-10 pl-6 lg:pb-5 pb-20 pt-14 data-div"
+      *ngFor="let d of data"
+    >
+      <h3>{{ d.title }}</h3>
+      <h5 class="mt-5">{{ d.text }}</h5>
+      <p class="w-[220px] mt-5">{{ d.body }}</p>
+      <div class="mt-10">
+        <label>{{ d.location.address }}</label>
+        <p>{{d.location.country}}</p>
+      </div>
+      <div class="flex justify-end mt-6 div-anchor"><a>Read more</a></div>
+    </div>
+  </div>
+</div>
