@@ -13,22 +13,26 @@ import { EventDetailsService } from './shared/event-details.service';
 import { HomeModule } from './home/home.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
+import { SwiperModule } from 'swiper/angular';
 
 import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    SwiperModule,
     AppRoutingModule,
     MarkdownModule.forRoot({
       sanitize: SecurityContext.NONE,
       markedOptions: {
         provide: MarkedOptions,
         useValue: {},
+        
       },
     }),
     HttpClientModule,

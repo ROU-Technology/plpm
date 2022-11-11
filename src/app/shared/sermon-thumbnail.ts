@@ -30,12 +30,10 @@ import { Component, Input } from '@angular/core';
       style="font-family: 'Roboto Condensed'; font-style: normal;
         font-weight: 400; font-size: 16px; line-height: 24px; color: #161722;"
     >
-      <!-- <ul class="fa-ul"> -->
       <span>{{ event?.location?.address }}</span>
       <span class="pad-left"
         >{{ event?.location?.city }},<br />{{ event?.location?.country }}</span
       >
-      <!-- </ul> -->
     </div>
   `,
   styles: [
