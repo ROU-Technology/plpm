@@ -1,85 +1,66 @@
-#home-hero {
-  .hero-container {
-    display: flex;
-    justify-content: space-between;
+@import "swiper/scss";
+@import "swiper/scss/pagination";
+@import "swiper/scss/navigation";
+.swiper {
+  height: 100%;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+}
+.zoom-out-div {
+  animation: zoom-in-zoom-out-out 5s ease infinite;
+}
+.zoom-out-div-1 {
+  animation: zoom-in-zoom-out 5s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
   }
-
-  .hero-texts {
-    font-family: roboto Condensed;
-    padding-top: 8rem;
-    color: #0d0d0d;
+  50% {
+    transform: scale(1.5, 1.5);
   }
-  .welcome {
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
-  .comm-texts {
-    font-weight: 700;
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 0rem;
-    max-width: 37rem;
-  }
-
-  button {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-  .last-text {
-    display: flex;
-    gap: 0.75rem;
-  }
-
-  .line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .last-text-1 {
-    font-weight: 400;
-  }
-
-  .hero-img {
-    img {
-      height: auto;
-      width: 100%;
-      margin: 4rem 0;
-    }
+  100% {
+    transform: scale(1, 1);
   }
 }
-
-@media screen and (max-width: 991.98px) {
-  #home-hero {
-    .learn-more {
-      height: 11px;
-    }
+@keyframes zoom-in-zoom-out-out {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-@media screen and (max-width: 767.98px) {
-  #home-hero {
-    .welcome {
-      text-align: center;
-    }
-    .button-div {
-      display: flex;
-      justify-content: center;
-    }
-    .comm-texts {
-      font-size: 2rem;
-      text-align: center;
-      word-wrap: break-word;
-    }
-    .hero-img {
-      display: none;
-    }
-    .welcome,
-    .last-text-1 {
-      margin-bottom: 1rem;
-    }
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide img {
+    display: none;
   }
 }
-// npm install --save ngx-useful-swiper@latest swiper
- 
+.swiper-slide img {
+  display: block;
+
+  object-fit: cover;
+}
