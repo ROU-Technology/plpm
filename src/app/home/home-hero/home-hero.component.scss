@@ -1,17 +1,22 @@
 @import "swiper/scss";
 @import "swiper/scss/pagination";
 @import "swiper/scss/navigation";
+
 .swiper {
   height: 100%;
   font-family: "Roboto Condensed";
   font-style: normal;
+  width: 100%;
 }
+
 .zoom-out-div {
   animation: zoom-in-zoom-out-out 5s ease infinite;
 }
+
 .zoom-out-div-1 {
   animation: zoom-in-zoom-out 5s ease infinite;
 }
+
 @keyframes zoom-in-zoom-out {
   0% {
     transform: scale(1, 1);
@@ -23,6 +28,7 @@
     transform: scale(1, 1);
   }
 }
+
 @keyframes zoom-in-zoom-out-out {
   0% {
     transform: scale(0.8, 0.8);
@@ -34,6 +40,7 @@
     transform: scale(1, 1);
   }
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -59,6 +66,7 @@
     display: none;
   }
 }
+
 .swiper-slide img {
   display: block;
 
