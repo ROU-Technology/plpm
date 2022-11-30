@@ -26,22 +26,14 @@ module.exports = {
         thin: "7px;",
         large: "12px;",
         larger: "17px;",
-
-
-
-
       },
       width: {
         cardwidth: "24%;"
       },
-
       height: {
         long: "900px;"
       }
-
     },
-
-
   },
   plugins: [],
 };
