@@ -14,10 +14,12 @@ import { HomeModule } from './home/home.module';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import 'prismjs';
 import 'prismjs/components/prism-typescript.min.js';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.js';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +31,7 @@ import 'prismjs/plugins/line-highlight/prism-line-highlight.js';
       markedOptions: {
         provide: MarkedOptions,
         useValue: {},
+        
       },
     }),
     HttpClientModule,

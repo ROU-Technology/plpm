@@ -18,7 +18,7 @@ const EVENTS = [
         time1: 'Friday 23:39 IST',
         day: 'Saturday 11:20 ISD',
     },
-    // price: 599.99,
+    
     imageUrl: '/assets/images/angularconnect-shield.png',
     location: {
       address: 'No 233 Main St. ',
@@ -32,12 +32,10 @@ const EVENTS = [
     type:'Upcoming Event',
     name: 'FAITH IS A PROCESS, NOT A DESTINATION',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    // time: 'Friday 23:39 IST Saturday 11:20 ISD',
     time: {
       time1: 'Friday 23:39 IST',
       day: 'Saturday 11:20 ISD',
   },
-    // price: 599.99,
     imageUrl: '/assets/images/angularconnect-shield.png',
     location: {
       address: 'No 233 Main St. ',
@@ -51,12 +49,10 @@ const EVENTS = [
     type:'Upcoming Event',
     name: 'THERE IS NOTHING IMPOSSIBLE',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    // time: 'Friday 23:39 IST Saturday 11:20 ISD',
     time: {
       time1: 'Friday 23:39 IST',
       day: 'Saturday 11:20 ISD',
   },
-    // price: 599.99,
     imageUrl: '/assets/images/angularconnect-shield.png',
     location: {
       address: 'No 233 Main St. ',
@@ -70,12 +66,10 @@ const EVENTS = [
     type:'Upcoming Event',
     name: 'CELEBRATING FREEDOM AND LIFE',
     body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    // time: 'Friday 23:39 IST Saturday 11:20 ISD',
     time: {
       time1: 'Friday 23:39 IST',
       day: 'Saturday 11:20 ISD',
   },
-    // price: 599.99,
     imageUrl: '/assets/images/angularconnect-shield.png',
     location: {
       address: 'No 233 Main St. ',

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SwiperModule } from 'swiper/angular';
+
 import { HomeComponent } from './home.component';
 import { HomeHeroComponent } from './home-hero/home-hero.component';
 import { LoveCompassionComponent } from './love-compassion/love-compassion.component';
@@ -22,6 +24,6 @@ import { share_inspire_inovate } from './share-inspire-inovate/share-inspire-ino
     share_inspire_inovate,
     OurSermonsComponent,
   ],
-  imports: [CommonModule, SharedModule, HomeRoutingModule],
+  imports: [CommonModule, SharedModule, HomeRoutingModule, SwiperModule],
 })
 export class HomeModule {}
