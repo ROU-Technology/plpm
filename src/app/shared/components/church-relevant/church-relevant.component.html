@@ -1,16 +1,15 @@
-<!-- SUB-HEADLINE -->
-  
-   <!--Heading-->
-   <h2 class="pb-10">
-    Our Philosophy, Believe and the ministery
-   </h2>
+<h2 class="pb-10 pt-7">
+  Our Philosophy, Believe and the ministry
+</h2>
 
 <div class="flex flex-wrap justify-center boxx pb-14">
-  <div class="columnn w-[78%] md:w-[42%] mx-auto md:mx-2 lg:w-[340px] lg:mx-3 lg:mb-0 mb-10 px-16 pb-14 lg:pb-20 pt-8 lg:pt-14 " *ngFor="let d of data">
-    
-      <img  [src]="d.icon" alt="">
-      <h4 class="mt-5">{{ d.text }}</h4>
-      <p class="w-[220px] mt-5">{{ d.body }}</p>
-    
-</div>
+  <div
+    *ngFor="let d of data"
+    class="columnn w-[78%] md:w-[42%] mx-auto md:mx-2 lg:w-[340px] lg:mx-3 lg:mb-0 mb-10 px-16 pb-14 lg:pb-20 pt-8 lg:pt-14 ">
+
+    <img [src]="d.icon" alt="">
+    <h4 class="mt-5">{{ d.text }}</h4>
+    <p class="w-[220px] mt-5">{{ d.body }}</p>
+
+  </div>
 </div>
