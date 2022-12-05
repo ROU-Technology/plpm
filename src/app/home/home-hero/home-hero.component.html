@@ -6,24 +6,27 @@
   class="mySwiper w-[70%] mx-[15%] md:w-full md:mx-0"
 >
   <ng-template swiperSlide class="h-[600px] bg-red-700 relative">
-    <video controls class="absolute h-full w-full">
-      <source src="./assets/videos/TypeScript.mp4" type="video/mp4" />
+    <video class="absolute h-full w-full" autoplay muted loop>
+      <source src="./assets/videos/oceans.mp4" type="video/mp4" />
       This browser doesn't support video tag.
     </video>
-    <div
-      class="flex flex-col items-center h-[600px] justify-center z-[1] text-white"
-    >
-      <h1 class="font-medium leading-[16px] text-[20px]">
-        Giviing: Giving to God servant
-      </h1>
-      <p class="max-w-[48rem] font-bold leading-[32px] text-[36px] my-12">
-        A word from God will librate your world come and get your word from God
-      </p>
 
-      <div class="flex justify-between items-center">
+    <div
+      class="flex flex-col items-center z-[1] h-[600px] justify-center text-white"
+    >
+      <div>
+        <h1 class="font-medium leading-[16px] text-[20px]">
+          Giviing: Giving to God servant
+        </h1>
+        <p class="max-w-[48rem] font-bold leading-[32px] text-[36px] my-12">
+          A word from God will librate your world come and get your word from
+          God
+        </p>
+      </div>
+      <div class="flex justify-between">
         <button></button>
         <div
-          class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1"
+          class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1 cursor-pointer"
         >
           <div
             class="flex justify-center items-center bg-[#56ccf280] w-[40px] h-[40px] rounded-[50%] pl-2 border-[1px] border-solid border-[#5CC0E2] zoom-out-div"
@@ -34,8 +37,8 @@
       </div></div
   ></ng-template>
   <ng-template swiperSlide class="h-[600px] bg-red-700 relative">
-    <video controls class="absolute h-full w-full">
-      <source src="./assets/videos/TypeScript.mp4" type="video/mp4" />
+    <video class="absolute h-full w-full" autoplay loop muted>
+      <source src="./assets/videos/oceans.mp4" type="video/mp4" />
       This browser doesn't support video tag.
     </video>
     <div
@@ -44,19 +47,30 @@
       <h1 class="font-medium leading-[16px] text-[20px]">
         Giviing: Giving to God servant
       </h1>
-      <p class="max-w-[48rem] font-bold leading-[32px] text-[36px] my-12">
+      <p
+        class="max-w-[48rem] font-bold leading-[45px] text-[28px] my-12 uppercase"
+      >
         A word from God will librate your world come and get your word from God
       </p>
 
-      <div class="flex justify-between items-center">
-        <button></button>
-        <div
-          class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1"
+      <div class="flex justify-between items-center gap-11">
+        <button
+          class="flex justify-between gap-5 items-center bg-white pl-5 pr-3 h-[43px] text-[#161722]"
+          type="button"
         >
+          Listen / Read full
+          <i class="fa fa-arrow-right font-light text-[#33343E]"></i>
+        </button>
+        <div class="flex flex-row justify-between gap-7 items-center">
+          <span class="font-semibold leading-[16px] text-[28px]">or</span>
           <div
-            class="flex justify-center items-center bg-[#56ccf280] w-[40px] h-[40px] rounded-[50%] pl-2 border-[1px] border-solid border-[#5CC0E2] zoom-out-div"
+            class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1"
           >
-            <i class="fa fa-play text-2xl text-[#D9D9D9]"></i>
+            <div
+              class="flex justify-center items-center bg-[#56ccf280] w-[40px] h-[40px] rounded-[50%] pl-2 border-[1px] border-solid border-[#5CC0E2] zoom-out-div"
+            >
+              <i class="fa fa-play text-2xl text-[#D9D9D9]"></i>
+            </div>
           </div>
         </div>
       </div></div

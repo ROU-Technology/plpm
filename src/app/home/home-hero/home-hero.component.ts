@@ -10,7 +10,12 @@ SwiperCore.use([Pagination, Navigation]);
   encapsulation: ViewEncapsulation.None,
 })
 export class HomeHeroComponent implements OnInit {
+  hideit: boolean = true;
+
   constructor() {}
 
   ngOnInit(): void {}
+  togglefullscreen() {
+    this.hideit = !this.hideit;
+  }
 }
