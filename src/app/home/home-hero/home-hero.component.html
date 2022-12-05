@@ -1,16 +1,12 @@
 <swiper
+  [navigation]="true"
   [pagination]="{
     dynamicBullets: true
   }"
-  [navigation]="true"
   class="mySwiper w-[70%] mx-[15%] md:w-full md:mx-0"
 >
-  <ng-template swiperSlide class="h-[600px] bg-red-700 relative">
-    <video class="absolute h-full w-full" autoplay muted loop>
-      <source src="./assets/videos/oceans.mp4" type="video/mp4" />
-      This browser doesn't support video tag.
-    </video>
-
+  <ng-template class="h-[600px] bg-red-700 relative" swiperSlide>
+    <plpm-video class="absolute h-full w-full"></plpm-video>
     <div
       class="flex flex-col items-center z-[1] h-[600px] justify-center text-white"
     >
@@ -34,13 +30,21 @@
             <i class="fa fa-play text-2xl text-[#D9D9D9]"></i>
           </div>
         </div>
-      </div></div
-  ></ng-template>
-  <ng-template swiperSlide class="h-[600px] bg-red-700 relative">
-    <video class="absolute h-full w-full" autoplay loop muted>
-      <source src="./assets/videos/oceans.mp4" type="video/mp4" />
-      This browser doesn't support video tag.
-    </video>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template class="h-[600px] bg-red-700 relative" swiperSlide>
+    <iframe
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      class="absolute h-full w-full"
+      frameborder="0"
+      height="315"
+      src="https://www.youtube.com/embed/ntfxBg9E52Y?controls=0"
+      title="YouTube video player"
+      width="560"
+    ></iframe>
+
     <div
       class="flex flex-col items-center h-[600px] justify-center z-[1] text-white"
     >
@@ -73,6 +77,7 @@
             </div>
           </div>
         </div>
-      </div></div
-  ></ng-template>
+      </div>
+    </div>
+  </ng-template>
 </swiper>
