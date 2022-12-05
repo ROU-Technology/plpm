@@ -6,6 +6,8 @@ import {NavBarComponent} from './components/nav-bar/nav-bar.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {RouterModule} from '@angular/router';
 import {SermonThumbnailComponent} from "./sermon-thumbnail";
+import {VideoComponent} from './components/video/video.component';
+import {YtPlayerAngularModule} from 'yt-player-angular';
 
 @NgModule({
   declarations: [
@@ -14,8 +16,9 @@ import {SermonThumbnailComponent} from "./sermon-thumbnail";
     NavBarComponent,
     FooterComponent,
     SermonThumbnailComponent,
+    VideoComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, YtPlayerAngularModule,],
   exports: [
     CommonModule,
     BoxComponent,
@@ -23,6 +26,7 @@ import {SermonThumbnailComponent} from "./sermon-thumbnail";
     NavBarComponent,
     FooterComponent,
     SermonThumbnailComponent,
+    VideoComponent,
   ],
 })
 export class SharedModule {
