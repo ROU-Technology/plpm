@@ -4,13 +4,13 @@
       <div
         class="p-4 bg-plpmDarkGray rounded-md flex items-center justify-center"
       >
-        <img class="" src="./assets/images/img_sermon.svg" alt="" />
+        <img alt="" class="" src="./assets/images/img_sermon.svg"/>
       </div>
 
-      <div id="form" class="px-6 py-4 bg-plpmDarkGray">
+      <div class="px-6 py-4 bg-plpmDarkGray" id="form">
         <div *ngFor="let d of contacts">
           <div class="flex-container lg:gap-[14px]">
-            <div class="fa-ul ml-5 md:ml-8">
+            <div class="fa-ul ml-5 md:ml-10">
               <li>
                 <span>{{ d.time?.day }}</span>
               </li>
@@ -33,10 +33,16 @@
           </div>
         </div>
         <button
-          class="primary-btn font-normal text-[15px] px-3 py-2"
+          [routerLink]="'1'"
+          class="bg-[#27ae60] text-white font-normal text-[15px] px-3 py-2 flex gap-2 cursor-pointer"
           type="button"
         >
-          Read more
+          <span>View Blog Details</span>
+          <img
+            alt="arrow/png"
+            class="h-[12px] mt-1"
+            src="/assets/images/arrow-right.png"
+          />
         </button>
       </div>
     </div>
@@ -48,11 +54,17 @@
 </div>
 
 <div class="px-14 md:px-16 py-20 bg-plpmLightGray">
-  <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10"
-  >
-    <div class="column" *ngFor="let event of events">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+    <div *ngFor="let event of events" class="column">
       <sermon-thumbnail [event]="event"></sermon-thumbnail>
+      <div class="flex justify-end">
+        <button
+          class="text-white font-normal text-[15px] px-2 py-2 bg-[#27ae60]"
+          type="button"
+        >
+          View sermon
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -1,84 +1,98 @@
-#home-hero {
-  .hero-container {
-    display: flex;
-    justify-content: space-between;
-  }
+@import "swiper/scss";
+@import "swiper/scss/pagination";
+@import "swiper/scss/navigation";
 
-  .hero-texts {
-    font-family: roboto Condensed;
-    padding-top: 8rem;
-    color: #0d0d0d;
-  }
-  .welcome {
-    font-weight: 700;
-    font-size: 1rem;
-    text-transform: uppercase;
-  }
-  .comm-texts {
-    font-weight: 700;
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 0rem;
-    max-width: 37rem;
-  }
+.swiper {
+  height: 100%;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  width: 100%;
+}
 
-  button {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-  }
-  .last-text {
-    display: flex;
-    gap: 0.75rem;
-  }
+.zoom-out-div {
+  animation: zoom-in-zoom-out-out 5s ease infinite;
+}
 
-  .line {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.zoom-out-div-1 {
+  animation: zoom-in-zoom-out 5s ease infinite;
+}
 
-  .last-text-1 {
-    font-weight: 400;
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
   }
-
-  .hero-img {
-    img {
-      height: auto;
-      width: 100%;
-      margin: 4rem 0;
-    }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 
-@media screen and (max-width: 991.98px) {
-  #home-hero {
-    .learn-more {
-      height: 11px;
-    }
+@keyframes zoom-in-zoom-out-out {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  #home-hero {
-    .welcome {
-      text-align: center;
-    }
-    .button-div {
-      display: flex;
-      justify-content: center;
-    }
-    .comm-texts {
-      font-size: 2rem;
-      text-align: center;
-      word-wrap: break-word;
-    }
-    .hero-img {
-      display: none;
-    }
-    .welcome,
-    .last-text-1 {
-      margin-bottom: 1rem;
-    }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .swiper-slide img {
+    display: none;
   }
 }
- 
+
+.swiper-slide img {
+  display: block;
+
+  object-fit: cover;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+.styled {
+  display: none;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.shadowpopup {
+  box-shadow: 0 0 20px #888;
+}
+.clapp {
+  display: flex;
+  min-height: 100vh;
+  z-index: 2300000000000000000;
+}
+// <iframe width="560" height="315" src="https://www.youtube.com/embed/jP3qAvnmpZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

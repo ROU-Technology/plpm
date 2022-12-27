@@ -1,24 +1,66 @@
-<section id="home-hero">
-  <div class="hero-container">
-    <div class="hero-texts md:pl-[6.875rem]">
-      <p class="welcome">Welcome to our CHURCH</p>
-      <h1 class="comm-texts">Become a part of our community</h1>
-      <div class="button-div">
-      <button class="primary-btn learn-more">Learn more</button>
-      </div>
-      <div class="last-text">
-        <div class="line">
-          <img src="/assets/images/Line.png " alt="line/png" />
+<div class="clapp">
+  <swiper
+    [navigation]="true"
+    [pagination]="{
+      dynamicBullets: true
+    }"
+    class="mySwiper w-[70%] mx-[15%] md:w-full md:mx-0"
+  >
+    <ng-template
+      class="h-[600px] bg-red-700 relative"
+      swiperSlide
+      *ngFor="let videoids of videosID"
+    >
+      <plpm-video
+        class="absolute h-full w-full"
+        [videoschild]="videoids"
+      ></plpm-video>
+      <div class="popup" *ngIf="!changestate">
+        <div class="w-[90%] mx-[5%] h-[550px] shadowpopup">
+          <plpm-video-popup
+            class=""
+            [videoschild]="videoids"
+          ></plpm-video-popup>
         </div>
-
-        <p class="last-text-1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-        </p>
       </div>
-    </div>
-
-    <div class="hero-img">
-      <img img-fluid src="/assets/images/cross.png" alt="cross/png" />
-    </div>
-  </div>
-</section>
+      <div
+        class="flex flex-col items-center z-[1] h-[600px] justify-center text-white"
+      >
+        <div *ngIf="changestate">
+          <h1 class="font-medium leading-[16px] text-[20px]">
+            Giviing: Giving to God's servant
+          </h1>
+          <p class="max-w-[48rem] font-bold leading-[32px] text-[36px] my-12">
+            A word from God will librate your world come and get your word from
+            God
+          </p>
+        </div>
+        <div
+          class="flex justify-between items-center gap-11"
+          *ngIf="changestate"
+        >
+          <button
+            class="flex justify-between gap-5 items-center bg-white pl-5 pr-3 h-[43px] text-[#161722]"
+            type="button"
+          >
+            Listen / Read full
+            <i class="fa fa-arrow-right font-light text-[#33343E]"></i>
+          </button>
+          <div class="flex flex-row justify-between gap-7 items-center">
+            <span class="font-semibold leading-[16px] text-[28px]">or</span>
+            <div
+              class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1"
+              (click)="PlayActivevideo()"
+            >
+              <div
+                class="flex justify-center items-center bg-[#56ccf280] w-[40px] h-[40px] rounded-[50%] pl-2 border-[1px] border-solid border-[#5CC0E2] zoom-out-div"
+              >
+                <i class="fa fa-play text-2xl text-[#D9D9D9]"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div>

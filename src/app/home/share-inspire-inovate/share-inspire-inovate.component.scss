@@ -1,0 +1,59 @@
+.containner {
+  color: #161722;
+  font-family: "Roboto Condensed";
+  label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+  }
+  .sub-head {
+    text-transform: uppercase;
+
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      font-style: normal;
+      line-height: 64px;
+    }
+  }
+  .boxx {
+    font-family: "Roboto Condensed";
+    color: #161722;
+
+    .data-div {
+      h3 {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.08em;
+        background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+      }
+      h5 {
+        font-weight: 700;
+        font-size: 24px;
+        font-style: normal;
+        line-height: 28px;
+        text-transform: uppercase;
+      }
+      .div-anchor {
+        a {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .boxx .columnn {
+    background: #56ccf2;
+  }
+}
