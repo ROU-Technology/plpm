@@ -17,6 +17,7 @@ export class VideoComponent implements OnInit {
     controls: false,
     info: false,
     captions: false,
+    autoplay: false,
   };
 
   constructor(private ytPlayerService: YtPlayerService) {}

@@ -4,33 +4,29 @@
     [pagination]="{
       dynamicBullets: true
     }"
-    class="mySwiper w-[70%] mx-[15%] md:w-full md:mx-0"
+    [autoplay]="true"
+    class="mySwiper w-[70%] mx-[15%] h-full md:w-full md:mx-0"
+    (slideChange)="onSlideChange($event)"
   >
     <ng-template
       class="h-[600px] bg-red-700 relative"
       swiperSlide
-      *ngFor="let videoids of videosID"
+      *ngFor="let videoID of videosIDs"
     >
       <plpm-video
         class="absolute h-full w-full"
-        [videoschild]="videoids"
+        [videoschild]="videoID"
       ></plpm-video>
-      <div class="popup" *ngIf="!changestate">
-        <div class="w-[90%] mx-[5%] h-[550px] shadowpopup">
-          <plpm-video-popup
-            class=""
-            [videoschild]="videoids"
-          ></plpm-video-popup>
-        </div>
-      </div>
       <div
-        class="flex flex-col items-center z-[1] h-[600px] justify-center text-white"
+        class="flex flex-col items-center z-[1] h-[600px] w-full justify-center text-white"
       >
         <div *ngIf="changestate">
           <h1 class="font-medium leading-[16px] text-[20px]">
             Giviing: Giving to God's servant
           </h1>
-          <p class="max-w-[48rem] font-bold leading-[32px] text-[36px] my-12">
+          <p
+            class="max-w-[48rem] font-bold leading-[32px] md:text-[36px] my-12 text[20px]"
+          >
             A word from God will librate your world come and get your word from
             God
           </p>
@@ -50,7 +46,7 @@
             <span class="font-semibold leading-[16px] text-[28px]">or</span>
             <div
               class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1"
-              (click)="PlayActivevideo()"
+              (click)="PlayActivevideo(videoID)"
             >
               <div
                 class="flex justify-center items-center bg-[#56ccf280] w-[40px] h-[40px] rounded-[50%] pl-2 border-[1px] border-solid border-[#5CC0E2] zoom-out-div"
@@ -63,4 +59,13 @@
       </div>
     </ng-template>
   </swiper>
+  <div class="popup" *ngIf="!changestate && currentVideo">
+    <div class="w-[90%] mx-[5%] h-[550px] shadowpopup">
+      <plpm-video-popup
+        class=""
+        [videoschild]="currentVideo"
+        (close)="closePopup()"
+      ></plpm-video-popup>
+    </div>
+  </div>
 </div>
