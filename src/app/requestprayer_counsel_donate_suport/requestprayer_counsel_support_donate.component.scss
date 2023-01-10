@@ -1,0 +1,48 @@
+.parent {
+  font-family: "Roboto Condensed";
+}
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-image: url("/assets/images/Donation.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .bg-container-2 {
+    background-image: url("/assets/images/prayerrequest.webp");
+    background-size: cover;
+    background-position: center;
+  }
+}
+.bg-inner {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.fordonate {
+  background-color: rgba(56, 180, 73, 0.05);
+}
+// border: 1px solid rgba(255, 255, 255, 0.7);
+.cont {
+  background-color: rgba(56, 180, 73, 0.2);
+  border: 1px solid #cfcfcf;
+}
+textarea {
+  border: 1px solid #cfcfcf;
+  background-color: transparent;
+  outline: none;
+}
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 0;
+  font-size: 1.2rem;
+  background-color: transparent;
+  outline: none;
+}
+::placeholder {
+  font-size: 12px;
+}
+.submit:hover {
+  color: #38b449;
+  background-color: #fff;
+}
