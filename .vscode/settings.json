@@ -1,5 +1,6 @@
 {
   "window.zoomLevel": 0,
   "cSpell.words": ["servethe", "upcomingeventpreview"],
-  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace"
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontSize": 20
 }
