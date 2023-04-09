@@ -11,21 +11,21 @@
     <ng-template
       class="h-[600px] bg-red-700 relative"
       swiperSlide
-      *ngFor="let videoID of videosIDs"
+      *ngFor="let slide of sliders"
     >
       <plpm-video
         class="absolute h-full w-full"
-        [videoschild]="videoID"
+        [videoschild]="slide.attributes.videoId"
       ></plpm-video>
       <div
         class="flex flex-col items-center z-[1] h-[600px] w-full justify-center text-white"
       >
         <div *ngIf="changestate">
           <h1 class="font-medium leading-[16px] text-[20px]">
-            Giviing: Giving to God's servant
+            {{ slide.attributes.title }}
           </h1>
           <p
-            class="max-w-[48rem] font-bold leading-[32px] md:text-[36px] my-12 text[20px]"
+            class="max-w-[48rem] font-bold leading-[32px] md:text-[36px] my-12 text-[20px]"
           >
             A word from God will librate your world come and get your word from
             God
@@ -38,6 +38,7 @@
           <button
             class="flex justify-between gap-5 items-center bg-white pl-5 pr-3 h-[43px] text-[#161722]"
             type="button"
+            (click)="oop()"
           >
             Listen / Read full
             <i class="fa fa-arrow-right font-light text-[#33343E]"></i>
@@ -46,7 +47,7 @@
             <span class="font-semibold leading-[16px] text-[28px]">or</span>
             <div
               class="flex justify-center items-center bg-[#56ccf280] w-[50px] h-[50px] rounded-[50%] border-[1px] border-solid border-[#5CC0E2] zoom-out-div-1"
-              (click)="PlayActivevideo(videoID)"
+              (click)="PlayActivevideo(slide.attributes.videoId)"
             >
               <div
                 class="flex justify-center items-center bg-[#56ccf280] w-[40px] h-[40px] rounded-[50%] pl-2 border-[1px] border-solid border-[#5CC0E2] zoom-out-div"

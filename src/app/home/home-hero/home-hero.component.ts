@@ -1,6 +1,10 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { HomeSliderService } from 'src/app/shared/homeslider.service';
+import { Subscription } from 'rxjs';
 
-import SwiperCore, { Pagination, Navigation, Swiper } from 'swiper';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
+import { Hero, HeroInterface } from 'src/app/interface/homehero';
+
 SwiperCore.use([Pagination, Navigation]);
 
 @Component({
@@ -10,15 +14,39 @@ SwiperCore.use([Pagination, Navigation]);
   encapsulation: ViewEncapsulation.None,
 })
 export class HomeHeroComponent implements OnInit {
+  slope: HeroInterface[];
+  sliders: Hero[];
+  errorMessage: string = '';
+  sub!: Subscription;
   hideit: boolean = false;
   changestate: boolean = true;
-  videosIDs: any = ['ntfxBg9E52Y', 'jP3qAvnmpZk'];
+  videosIDs: string[] = [];
   currentVideo: string = '';
   activeIndex: number = 0;
 
-  constructor() {}
+  constructor(private homeSliderService: HomeSliderService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.sub = this.homeSliderService.getsliders().subscribe({
+      next: (sliders) => {
+        const ids = sliders.map((hero) => {
+          return hero.attributes.videoId;
+        });
+        console.log('slide', sliders);
+        this.videosIDs = ids;
+        console.log(this.videosIDs);
+        this.sliders = sliders;
+      },
+      error: (err) => (this.errorMessage = err),
+    });
+  }
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
+
+  // videoProp() {
+  //   this.sliders.map((slide) => {});
+  // }
 
   onSlideChange(event) {
     console.log(event);
@@ -27,6 +55,13 @@ export class HomeHeroComponent implements OnInit {
     this.currentVideo = this.videosIDs[this.activeIndex];
   }
 
+  loopsliderForid(): any {}
+
+  oop(): any {
+    console.log(this.loopsliderForid());
+  }
+
+  // }
   togglefullscreen() {
     this.hideit = !this.hideit;
   }
@@ -40,7 +75,4 @@ export class HomeHeroComponent implements OnInit {
   closePopup() {
     this.changestate = !this.changestate;
   }
-  // nextvideo(event): any {
-  //   console.log(event[0].activeIndex + 'you get it ');
-  // }
 }
